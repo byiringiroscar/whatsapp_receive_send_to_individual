@@ -13,7 +13,6 @@ def get_all_chat_messages_individual():
 
     headers = {'content-type': 'application/x-www-form-urlencoded'}
 
-
     try:
         response = requests.request("GET", url, headers=headers, params=querystring)
         new_data = response.json()
@@ -21,8 +20,5 @@ def get_all_chat_messages_individual():
     except ConnectionError as e:
         print(e)
         return False
-
-
-
 
 

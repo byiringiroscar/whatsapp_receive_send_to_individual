@@ -8,7 +8,9 @@ all_message_group = receive_msg()
 
 
 if not all_message_group:
-    print("-----------------------connection ------error ------------------")
+    print("----connection ------error -------- or--------no ----data----returned--")
+elif all_message_group == 'no-data':
+    print("no -----data----returned----specified")
 
 else:
     mydb = mysql.connector.connect(host="localhost", user="root", passwd="1234", database="whatsapp_send")

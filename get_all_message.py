@@ -20,3 +20,4 @@ def receive_message_sent():
     except ConnectionError as e:
         print(e)
         return False
+

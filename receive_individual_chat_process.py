@@ -5,6 +5,7 @@ from datetime import datetime
 now_date = datetime.now().date()
 
 
+
 def get_all_arranged_chat():
     all_chats_message = get_all_chat_messages_individual()
     all_chat_arranged = []
@@ -21,4 +22,4 @@ def get_all_arranged_chat():
             else:
                 return 'no-data'
 
-
+# print(get_all_arranged_chat())

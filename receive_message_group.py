@@ -12,9 +12,12 @@ def receive_msg():
         print("connection error ---------------")
         return False
     else:
-        for all in all_message:
-            time_sent = convert_time_stamp(all['timestamp']).date()
-            if now_date == time_sent:
-                message_new.append(all)
+        if all_message:
+            for all in all_message:
+                time_sent = convert_time_stamp(all['timestamp']).date()
+                if now_date == time_sent:
+                    message_new.append(all)
+        else:
+            return 'no-data'
     return message_new
 
