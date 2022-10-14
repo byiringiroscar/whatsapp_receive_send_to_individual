@@ -21,4 +21,3 @@ def get_all_chat_messages_individual():
         print(e)
         return False
 
-
